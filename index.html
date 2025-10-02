@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Olivier Marin – Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Banner -->
+  <table class="banner">
+    <tr>
+      <td>
+        <img src="Pix/banner.png" alt="Olivier Marin" class="banner-img">
+      </td>
+    </tr>
+  </table>
+
+ <header>
+  <h1>Olivier Marin</h1>
+
+  <!-- Profile table -->
+  <table class="profile-table">
+    <tr>
+      <td class="profile-pic">
+        <img src="Pix/headshot.png" alt="Olivier Marin" class="portrait-img">
+      </td>
+      <td class="profile-text">
+        <p class="tagline">Computer scientist & academic leader<br> with international experience.</p>
+        <p> <em>Distributed Systems <br> Teaching Innovation <br> Academic Leadership</em></p>
+      </td>
+    </tr>
+  </table>
+
+</header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv-olivier-marin.pdf">Download CV (PDF)</a>
+  </nav>
+
+  <main>
+
+    <section>
+      <p>
+          I'm an international academic with over twenty years of experience in computer science
+          research, education, and institutional leadership worldwide.
+          My work combines distributed systems research with innovative teaching practice 
+          and a strong commitment to cross-cultural higher education.
+      </p>
+    </section>
+
+    <section>
+      <h2>Appointments</h2>
+      <article>
+        <h3>NYU Shanghai</h3>
+        <p><em>Professor of Practice in Computer Science, NYU Shanghai, China</em>, 2018 - Present</p>
+        <ul>
+          <li>Designed and taught courses in operating systems, architecture, and distributed systems</li>
+          <li>Served as Associate Dean of Arts &amp; Sciences</li>
+          <li>Led cross-disciplinary initiatives in experiential learning</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Sorbonne Université</h3>
+        <p><em>Maître de Conférences (tenured), Sorbonne Université, France</em>, 2004 - present</p>
+        <p>Permanent faculty position in Computer Science. Currently on leave while serving in China.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>Doctor Europaeus, PhD in Computer Science, Université du Havre, France - 2003</p>
+    </section>
+
+    <section>
+      <h2>Publications (Selected)</h2>
+      <ul>
+        <li>Stab-FD: A cooperative and adaptive failure detector for wide area networks, JPDC, 2024</li>
+        <li>Simple yet Efficient Deployment of Scientific Applications in the Cloud, ICPADS, 2021</li>
+        <li>ASCENT: a Provably-Terminating Decentralized Logging Service, Computer Journal, 2017</li>
+      </ul>
+      <p>➡ See the full list <a href="http://publicationslist.org/olivier.marin">here</a>.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <!-- visible, obfuscated text for users; link assembled by JS to avoid simple crawlers -->
+        <a id="email-link" href="#">racine75 [at] gmail [dot] com</a>
+        <noscript> (JavaScript is disabled; email shown as text to avoid scraping: racine75 [at] gmail [dot] com)</noscript>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Olivier Marin</p>
+  </footer>
+
+  <!-- Email obfuscation script: constructs a proper mailto link in the browser -->
+  <script>
+    (function() {
+      var user = 'racine75';
+      var domain = 'gmail.com';
+      var el = document.getElementById('email-link');
+      if (!el) return;
+      // display obfuscated text to users
+      el.textContent = user + ' [at] ' + domain.replace('.', ' [dot] ');
+      // produce clickable mailto link
+      el.href = 'mailto:' + user + '@' + domain;
+      // optional: set rel attributes to be safe
+      el.setAttribute('rel', 'noopener noreferrer');
+    })();
+  </script>
+</body>
+</html>
